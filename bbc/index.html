@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>จังหวัดกรุงเทพ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+    <ul class="menu">
+        <li><a href="/index.html">หน้าหลัก</a></li>
+
+        <li class="dropdown">
+            <a href="/about/index.html">ข้อมูลจังหวัด ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="/about/history.html">ประวัติ</a></li>
+                <li><a href="/about/geography.html">ภูมิประเทศ</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="/travel/index.html">ท่องเที่ยว ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="/travel/temple.html">วัด</a></li>
+                <li><a href="/travel/nature.html">ธรรมชาติ</a></li>
+                <li><a href="/travel/city.html">ในเมือง</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="/transport/index.html">การเดินทาง ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="/transport/plane.html">เครื่องบิน</a></li>
+                <li><a href="/transport/train.html">รถไฟ</a></li>
+                <li><a href="/transport/bus.html">รถโดยสาร</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="/hotel/index.html">ที่พัก ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="/hotel/hotel.html">โรงแรม</a></li>
+                <li><a href="/hotel/resort.html">รีสอร์ท</a></li>
+                <li><a href="/hotel/homestay.html">โฮมสเตย์</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="/food/index.html">ร้านอาหาร ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="/food/local.html">อาหารพื้นเมือง</a></li>
+                <li><a href="/food/cafe.html">คาเฟ่</a></li>
+            </ul>
+        </li>
+
+        <li class="dropdown">
+            <a href="/souvenir/index.html">ของฝาก ▾</a>
+            <ul class="dropdown-content">
+                <li><a href="/souvenir/food.html">อาหาร</a></li>
+                <li><a href="/souvenir/craft.html">หัตถกรรม</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<header class="hero">
+
+    <svg class="hero-bg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="#dfeae6"
+            d="M0,224L240,192L480,224L720,160L960,192L1200,128L1440,192L1440,0L0,0Z">
+        </path>
+    </svg>
+
+    <div class="slides">
+        <img src="images/4.jpg" class="slide active" alt="">
+        <img src="images/3.jpg" class="slide" alt="">
+        <img src="images/2.jpg" class="slide" alt="">
+        <img src="images/1.jpg" class="slide" alt="">
+    </div>
+
+    <div class="hero-text">
+        <h1>จังหวัดกรุงเทพมหานคร</h1>
+        <p>เมืองแห่งสีสัน วัฒนธรรม และชีวิตไม่หลับใหล</p>
+    </div>
+
+</header>
+
+<main>
+
+<section class="intro">
+    <p>
+        ยินดีต้อนรับสู่เว็บไซต์ข้อมูลจังหวัดกรุงเทพมหานคร  
+        มหานครศูนย์กลางเศรษฐกิจ วัฒนธรรม และการท่องเที่ยวของไทย
+    </p>
+</section>
+
+<section class="highlight">
+
+    <div class="highlight-item">
+        <h2>🌆 วิถีเมืองและธรรมชาติ</h2>
+        <p>
+            กรุงเทพมีทั้งแม่น้ำเจ้าพระยา สวนสาธารณะ  
+            และพื้นที่สีเขียวท่ามกลางความเป็นมหานคร
+        </p>
+    </div>
+
+    <div class="highlight-item">
+        <h2>🛕 วัฒนธรรมและประวัติศาสตร์</h2>
+        <p>
+            วัดสำคัญ พระบรมมหาราชวัง  
+            และวิถีชีวิตไทยที่สืบทอดมายาวนาน
+        </p>
+    </div>
+
+    <div class="highlight-item">
+        <h2>🍜 อาหารและของฝาก</h2>
+        <p>
+            แหล่งรวมสตรีทฟู้ดระดับโลก  
+            อาหารไทยหลากหลาย และของฝากขึ้นชื่อ
+        </p>
+    </div>
+
+</section>
+
+<script>
+    const slides = document.querySelectorAll(".slide");
+    let current = 0;
+
+    setInterval(() => {
+        slides[current].classList.remove("active");
+        current = (current + 1) % slides.length;
+        slides[current].classList.add("active");
+    }, 4000);
+</script>
+
+</body>
+</html>

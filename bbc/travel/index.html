@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>แหล่งท่องเที่ยวกรุงเทพมหานคร</title>
+<link rel="stylesheet" href="travel.css">
+</head>
+<body>
+
+<nav>
+<ul class="menu">
+<li><a href="/index.html">หน้าหลัก</a></li>
+<li class="dropdown"><a href="/about/index.html">ข้อมูลจังหวัด ▾</a>
+<ul class="dropdown-content">
+<li><a href="/about/history.html">ประวัติ</a></li>
+<li><a href="/about/geography.html">ภูมิประเทศ</a></li>
+</ul></li>
+<li class="dropdown"><a href="/travel/index.html">ท่องเที่ยว ▾</a>
+<ul class="dropdown-content">
+<li><a href="/travel/temple.html">วัด</a></li>
+<li><a href="/travel/nature.html">ธรรมชาติ</a></li>
+<li><a href="/travel/city.html">ในเมือง</a></li>
+</ul></li>
+<li class="dropdown"><a href="/transport/index.html">การเดินทาง ▾</a>
+<ul class="dropdown-content">
+<li><a href="/transport/plane.html">เครื่องบิน</a></li>
+<li><a href="/transport/train.html">รถไฟ</a></li>
+<li><a href="/transport/bus.html">รถโดยสาร</a></li>
+</ul></li>
+<li class="dropdown"><a href="/hotel/index.html">ที่พัก ▾</a>
+<ul class="dropdown-content">
+<li><a href="/hotel/hotel.html">โรงแรม</a></li>
+<li><a href="/hotel/resort.html">รีสอร์ท</a></li>
+<li><a href="/hotel/homestay.html">โฮมสเตย์</a></li>
+</ul></li>
+<li class="dropdown"><a href="/food/index.html">ร้านอาหาร ▾</a>
+<ul class="dropdown-content">
+<li><a href="/food/local.html">อาหารพื้นเมือง</a></li>
+<li><a href="/food/cafe.html">คาเฟ่</a></li>
+</ul></li>
+<li class="dropdown"><a href="/souvenir/index.html">ของฝาก ▾</a>
+<ul class="dropdown-content">
+<li><a href="/souvenir/food.html">อาหาร</a></li>
+<li><a href="/souvenir/craft.html">หัตถกรรม</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<main>
+<h1>แหล่งท่องเที่ยวกรุงเทพมหานคร</h1>
+
+<div class="slideshow-container">
+
+  <img class="slide-img" src="imgtravel/1.jpg">
+  <img class="slide-img" src="imgtravel/2.jpg">
+  <img class="slide-img" src="imgtravel/3.jpg">
+  <img class="slide-img" src="imgtravel/4.jpg">
+  <img class="slide-img" src="imgtravel/5.jpg">
+
+</div>
+
+<p>
+กรุงเทพมหานครเป็นจุดหมายปลายทางท่องเที่ยวระดับโลก  
+มีแหล่งท่องเที่ยวหลากหลายทั้งด้านวัฒนธรรม ประวัติศาสตร์ และวิถีชีวิตเมือง<br>
+
+นักท่องเที่ยวสามารถเยี่ยมชมวัดและสถานที่สำคัญ เช่น พระบรมมหาราชวัง วัดพระแก้ว  
+รวมถึงแหล่งท่องเที่ยวสมัยใหม่อย่างห้างสรรพสินค้า ตลาด และแหล่งบันเทิงใจกลางเมือง<br>
+
+กรุงเทพยังมีเสน่ห์ของวิถีชีวิตริมแม่น้ำเจ้าพระยา  
+อาหารสตรีทฟู้ดชื่อดัง และย่านท่องเที่ยวที่มีชีวิตชีวาตลอดทั้งวันและคืน<br>
+
+ในหน้านี้ได้รวบรวมข้อมูลแนะนำเกี่ยวกับแหล่งท่องเที่ยวในกรุงเทพมหานคร  
+เพื่อช่วยให้คุณวางแผนการเดินทางและค้นหาประสบการณ์ที่น่าประทับใจได้อย่างสะดวก
+</p>
+
+</main>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let slides = document.getElementsByClassName("slide-img");
+
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2500);
+}
+</script>
+
+</body>
+</html>

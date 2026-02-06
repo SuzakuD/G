@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>ลักษณะภูมิประเทศและภูมิอากาศ</title>
+<link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<nav>
+<ul class="menu">
+<li><a href="/index.html">หน้าหลัก</a></li>
+<li class="dropdown"><a href="/about/index.html">ข้อมูลจังหวัด ▾</a>
+<ul class="dropdown-content">
+<li><a href="/about/history.html">ประวัติ</a></li>
+<li><a href="/about/geography.html">ภูมิประเทศ</a></li>
+</ul></li>
+<li class="dropdown"><a href="/travel/index.html">ท่องเที่ยว ▾</a>
+<ul class="dropdown-content">
+<li><a href="/travel/temple.html">วัด</a></li>
+<li><a href="/travel/nature.html">ธรรมชาติ</a></li>
+<li><a href="/travel/city.html">ในเมือง</a></li>
+</ul></li>
+<li class="dropdown"><a href="/transport/index.html">การเดินทาง ▾</a>
+<ul class="dropdown-content">
+<li><a href="/transport/plane.html">เครื่องบิน</a></li>
+<li><a href="/transport/train.html">รถไฟ</a></li>
+<li><a href="/transport/bus.html">รถโดยสาร</a></li>
+</ul></li>
+<li class="dropdown"><a href="/hotel/index.html">ที่พัก ▾</a>
+<ul class="dropdown-content">
+<li><a href="/hotel/hotel.html">โรงแรม</a></li>
+<li><a href="/hotel/resort.html">รีสอร์ท</a></li>
+<li><a href="/hotel/homestay.html">โฮมสเตย์</a></li>
+</ul></li>
+<li class="dropdown"><a href="/food/index.html">ร้านอาหาร ▾</a>
+<ul class="dropdown-content">
+<li><a href="/food/local.html">อาหารพื้นเมือง</a></li>
+<li><a href="/food/cafe.html">คาเฟ่</a></li>
+</ul></li>
+<li class="dropdown"><a href="/souvenir/index.html">ของฝาก ▾</a>
+<ul class="dropdown-content">
+<li><a href="/souvenir/food.html">อาหาร</a></li>
+<li><a href="/souvenir/craft.html">หัตถกรรม</a></li>
+</ul></li>
+</ul>
+</nav>
+
+<main class="geo-box">
+
+    <h1>ลักษณะภูมิประเทศและภูมิอากาศ</h1>
+
+    <!-- ช่องใส่รูป -->
+    <div class="geo-images">
+        <img id="geoImg" src="imgabout/bangkok-geo.jpg" alt="ภูมิประเทศกรุงเทพมหานคร">
+    </div>
+
+    <!-- กล่องซูม -->
+    <div id="imgModal" class="img-modal">
+        <span id="closeModal">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <!-- ข้อความใต้รูป -->
+    <div class="geo-text">
+        <p>
+        กรุงเทพมหานครมีลักษณะภูมิประเทศเป็นที่ราบลุ่มแม่น้ำเจ้าพระยา<br>
+        พื้นที่ส่วนใหญ่เป็นเขตเมืองและชุมชนหนาแน่น มีแม่น้ำและคลองจำนวนมาก<br>
+        มีภูมิอากาศแบบมรสุมเขตร้อน แบ่งเป็น 3 ฤดู คือ ร้อน ฝน และหนาว<br>
+        ฤดูร้อนอากาศค่อนข้างร้อน ฤดูฝนมีฝนตกชุก และฤดูหนาวอากาศไม่หนาวจัด<br>
+        ลักษณะภูมิประเทศและภูมิอากาศเอื้อต่อการเป็นศูนย์กลางเศรษฐกิจและการคมนาคมของประเทศ
+        </p>
+    </div>
+
+</main>
+
+<script>
+const geoImg = document.getElementById("geoImg");
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("modalImg");
+const closeModal = document.getElementById("closeModal");
+
+geoImg.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+}
+
+closeModal.onclick = function() {
+    modal.style.display = "none";
+}
+
+modal.onclick = function(e) {
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
